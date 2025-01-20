@@ -5,6 +5,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    background-color: #f6f6f6;
+}
+
 .debug {
     header {
         background-image: url(assets/img/hero-bg.jpg);
@@ -16,22 +20,43 @@
         background-size: cover;
     }
 
-    #community {
-        background-color: #f6f6f6;
+    #invite-only {
+        background-color: white;
     }
 
-    #technology {
-        background-color: #f6f6f6;
-    }
+}
 
-    #references {
-        background-color: #23272a;
-    }
-
-    #logo-footer {
-        background-color: #23272a;
+#community {
+    svg {
+        color: #f6f6f6;
+        background-color: white;
     }
 }
+
+#fandom {
+    background-color: white;
+
+    svg {
+        color: white;
+        background-color: #f6f6f6;
+    }
+}
+
+#technology {
+    svg {
+        color: #f6f6f6;
+        background-color: white;
+    }
+}
+
+#references {
+    background-color: #23272a;
+}
+
+#logo-footer {
+    background-color: #23272a;
+}
+
 
 .m-A {
     margin: auto;
