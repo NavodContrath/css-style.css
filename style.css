@@ -15,7 +15,7 @@ body {
 .debug {
     header {
         background-image: url(assets/img/hero-bg.jpg);
-        background-size: cover;
+
     }
 
     #jumbotron {
