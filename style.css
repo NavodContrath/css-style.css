@@ -272,6 +272,7 @@ header {
             margin-bottom: 1rem;
             font-size: 2rem;
             color: #7289da;
+            max-width: 80%;
         }
 
         select {
