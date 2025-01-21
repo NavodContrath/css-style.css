@@ -1,3 +1,4 @@
+/* #region-common */
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +10,8 @@ body {
     background-color: #f6f6f6;
 }
 
+/* #endregion-common */
+/* #region-debug */
 .debug {
     header {
         background-image: url(assets/img/hero-bg.jpg);
@@ -26,6 +29,8 @@ body {
 
 }
 
+/* #endregion-debug */
+/* #region-bgcolor */
 #community {
     svg {
         color: #f6f6f6;
@@ -57,7 +62,8 @@ body {
     background-color: #23272a;
 }
 
-
+/* #endregion-bgcolor */
+/* #region-utilities */
 .m-A {
     margin: auto;
 }
@@ -90,13 +96,14 @@ body {
     align-items: center;
 }
 
+/* #endregion-bgcolor */
 .description {
     /* background-color: #1e90ff; */
 
     padding: 6rem;
     color: #23272a;
 
-    h1 {
+    h2 {
         margin-bottom: 2rem;
         font-size: 2.5rem;
     }
@@ -116,10 +123,12 @@ header {
     flex-wrap: wrap;
 
     ul {
-        padding: 1rem;
         list-style: none;
         display: flex;
+        flex-grow: 2;
+        justify-content: center;
         gap: 2rem;
+        padding: 0.5rem;
 
         a {
             text-decoration: none;
@@ -131,11 +140,12 @@ header {
 
     #logo {
         flex-grow: 1;
+
     }
 
     #login {
         flex-grow: 1;
-        text-align: end;
+        text-align: center;
 
         #log-btn {
             padding: 10px;
@@ -143,6 +153,7 @@ header {
             border-radius: 20px;
             border: none;
             font-weight: bold;
+            text-decoration: none;
 
             &:hover {
                 background-color: grey;
@@ -153,28 +164,30 @@ header {
 }
 
 #jumbo-container {
-    width: 60%;
+    width: 50%;
     text-align: center;
     padding: 5rem;
 
     h1 {
         margin-bottom: 3rem;
         color: white;
-        font-size: 50px;
+        font-size: 3rem;
     }
 
     #jumbo-text {
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
         color: white;
+        word-spacing: 5px;
 
     }
 
     #download-btn {
-        padding: 10px;
+        padding: 15px;
         background-color: white;
         border-radius: 20px;
         border: none;
         font-weight: bold;
+        text-decoration: none;
 
         &:hover {
             background-color: grey;
@@ -185,12 +198,13 @@ header {
 
     #browser-btn {
         margin-left: 1rem;
-        padding: 10px;
+        padding: 15px;
         background-color: black;
         color: white;
         border-radius: 20px;
         border: none;
         font-weight: bold;
+        text-decoration: none;
 
         &:hover {
             background-color: grey;
@@ -201,6 +215,7 @@ header {
 
 #techno-container {
     text-align: center;
+    padding: 0 0 5rem 0;
 
     #svg-4 {
         width: 100%;
@@ -209,7 +224,7 @@ header {
     #techno-text {
         padding: 2rem;
 
-        h1 {
+        h2 {
             margin-bottom: 2rem;
             font-size: 2.5rem;
         }
@@ -225,15 +240,15 @@ header {
             background-position: center;
         }
 
-        button {
+        #mac-btn {
             padding: 15px;
             background-color: #8ea1e1;
-            border-radius: 100px;
+            border-radius: 20px;
             border: none;
             font-size: medium;
             font-weight: bold;
             color: white;
-            margin-bottom: 5rem;
+            text-decoration: none;
 
             &:hover {
                 background-color: grey;
@@ -246,14 +261,14 @@ header {
 }
 
 #ref-container {
+    padding: 3rem;
 
     #ref-social {
+        flex-direction: column;
+        align-items: flex-start;
+        flex-grow: 2;
 
-        min-height: 400px;
-
-        h1 {
-            padding-right: 10rem;
-            margin-top: 2rem;
+        h3 {
             margin-bottom: 1rem;
             font-size: 2rem;
             color: #7289da;
@@ -281,8 +296,8 @@ header {
     }
 
     .ref-links {
-        min-height: 400px;
-        padding: 2rem;
+        flex-grow: 1;
+
 
         ul {
             color: #7289da;
@@ -290,7 +305,7 @@ header {
             font-weight: bold;
 
             li {
-                margin-top: 0.5rem;
+                margin-top: 1rem;
 
                 a {
                     color: white;
@@ -303,7 +318,7 @@ header {
 }
 
 #foot-container {
-    border-top: 2px solid #7289da;
+    border-top: 2px solid #7289da37;
     padding: 1rem 0 3rem 0;
     justify-content: space-between;
     align-items: center;
@@ -319,10 +334,10 @@ header {
     #foot-btn {
         background-color: #8ea1e1;
         color: white;
-        height: 2rem;
         border: none;
         border-radius: 20px;
         padding: 10px;
         font-weight: bold;
+        text-decoration: none;
     }
 }
